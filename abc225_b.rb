@@ -12,10 +12,7 @@
 #  参考回答
 # https://atcoder.jp/contests/abc225/submissions/27010162
 
-require 'byebug'
-require '2.7.1'
-
-byebug
+# byebug
 n = gets.to_i
 ary = Array.new(n-1){gets.split.map(&:to_i)} # ary = [[1, 4], [2, 4], [3, 4], [4, 5]]
 puts ary.flatten.tally.values.max == n-1 ? 'Yes' : 'No'
