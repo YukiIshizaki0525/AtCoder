@@ -15,7 +15,7 @@ require 'byebug'
 
 byebug
 n, k, a = gets.split.map(&:to_i)
-k.times do
+(k-1).times do
   a += 1
   a = 1 if a == n + 1
 end
