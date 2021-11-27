@@ -16,12 +16,24 @@
 
 # puts count
 
-# 模範回答
-require 'byebug'
+# k = x - i -jで計算量を少なくする
+# while (n, x = gets.split.map(&:to_i)) != [0, 0]
+#   (1..n).each do |i|
+#     (1..n-1).each do |j|
+#       k = x - i -j
+#       cnt += 1 if j<k && n<=k
+#     end
+#   end
+# end
+# puts cnt
 
-byebug
-loop {
-  n, x = gets.split.map &:to_i
-  break if n == 0
-  p (1..n).to_a.combination(3).count{|a, b, c| a + b + c == x}
-}
+# 模範回答
+# require 'byebug'
+# byebug
+
+# loop {
+#   n, x = gets.split.map &:to_i
+#   break if n == 0
+#   p (1..n).to_a.combination(3).count{|a, b, c| a + b + c == x}
+# }
+
