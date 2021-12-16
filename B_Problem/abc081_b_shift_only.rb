@@ -1,8 +1,8 @@
-require 'byebug'
+# require 'byebug'
+# byebug
 
 _n = gets.to_i
 as = gets.strip.split.map(&:to_i)
-byebug
 cnt = 0
 while as.all?(&:even?) do
     cnt = cnt.succ
