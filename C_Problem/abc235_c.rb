@@ -53,10 +53,6 @@ end
 
 hash = {}
 a.each.with_index { |x, i| hash[x].nil? ? hash[x] = [i] : hash[x] << i }
-# keyがないならkeyと値を追加、あるならkeyに該当する値のみ追加
-
-# 結果
-# hash = {1=>[0, 1, 4], 2=>[2, 5], 3=>[3]}
 
 ans = []
 xk.each do |x, k|
